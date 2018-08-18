@@ -1,0 +1,882 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .nav li > form > button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.img-profile-small {
+    width: 50px;
+}
+
+/* custom - start */
+
+.img-avatar-border{
+    border: 5px solid #dddddd;
+}
+
+/*  Backend Used Login  */
+.user-login {
+    background-color: #dedede;
+    margin: 20px 0 0;
+    padding: 20px;
+}
+
+.upload-form .grid-view {
+    overflow: hidden !important;
+}
+
+/* margin top and bottom */
+
+.margin-top-05 {
+    margin-top: 0.5em;
+}
+
+.margin-top-10 {
+    margin-top: 1.0em;
+}
+
+.margin-top-15 {
+    margin-top: 1.5em;
+}
+
+.margin-top-20 {
+    margin-top: 2.0em;
+}
+
+.margin-top-25 {
+    margin-top: 2.5em;
+}
+
+.margin-top-30 {
+    margin-top: 3.0em;
+}
+
+.margin-bottom-05 {
+    margin-bottom: 0.5em;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 1.0em;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 1.5em;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 2.0em;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 2.5em;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 3.0em;
+}
+
+/* margin left and right */
+
+.margin-left-05 {
+    margin-left: 0.5em;
+}
+
+.margin-left-10 {
+    margin-left: 1.0em;
+}
+
+.margin-left-15 {
+    margin-left: 1.5em;
+}
+
+.margin-left-20 {
+    margin-left: 2.0em;
+}
+
+.margin-left-25 {
+    margin-left: 2.5em;
+}
+
+.margin-left-30 {
+    margin-left: 3.0em;
+}
+
+.margin-right-05 {
+    margin-right: 0.5em;
+}
+
+.margin-right-10 {
+    margin-right: 1.0em;
+}
+
+.margin-right-15 {
+    margin-right: 1.5em;
+}
+
+.margin-right-20 {
+    margin-right: 2.0em;
+}
+
+.margin-right-25 {
+    margin-right: 2.5em;
+}
+
+.margin-right-30 {
+    margin-right: 3.0em;
+}
+
+/* margin on all sides */
+
+.margin-05 {
+    margin: 0.5em;
+}
+
+.margin-10 {
+    margin: 1.0em;
+}
+
+.margin-15 {
+    margin: 1.5em;
+}
+
+.margin-20 {
+    margin: 2.0em;
+}
+
+.margin-25 {
+    margin: 2.5em;
+}
+
+.margin-30 {
+    margin: 3.0em;
+}
+
+/* padding top and bottom */
+
+.padding-top-05 {
+    padding-top: 0.5em;
+}
+
+.padding-top-10 {
+    padding-top: 1.0em;
+}
+
+.padding-top-15 {
+    padding-top: 1.5em;
+}
+
+.padding-top-20 {
+    padding-top: 2.0em;
+}
+
+.padding-top-25 {
+    padding-top: 2.5em;
+}
+
+.padding-top-30 {
+    padding-top: 3.0em;
+}
+
+.padding-bottom-05 {
+    padding-bottom: 0.5em;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 1.0em;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 1.5em;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 2.0em;
+}
+
+.padding-bottom-25 {
+    padding-bottom: 2.5em;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 3.0em;
+}
+
+/* padding left and right */
+
+.padding-left-05 {
+    padding-left: 0.5em;
+}
+
+.padding-left-10 {
+    padding-left: 1.0em;
+}
+
+.padding-left-15 {
+    padding-left: 1.5em;
+}
+
+.padding-left-20 {
+    padding-left: 2.0em;
+}
+
+.padding-left-25 {
+    padding-left: 2.5em;
+}
+
+.padding-left-30 {
+    padding-left: 3.0em;
+}
+
+.padding-right-05 {
+    padding-right: 0.5em;
+}
+
+.padding-right-10 {
+    padding-right: 1.0em;
+}
+
+.padding-right-15 {
+    padding-right: 1.5em;
+}
+
+.padding-right-20 {
+    padding-right: 2.0em;
+}
+
+.padding-right-25 {
+    padding-right: 2.5em;
+}
+
+.padding-right-30 {
+    padding-right: 3.0em;
+}
+
+/* padding on all sides */
+.padding-01 {
+    padding: 0.1em;
+}
+
+.padding-02 {
+    padding: 0.2em;
+}
+
+.padding-03 {
+    padding: 0.3em;
+}
+
+.padding-04 {
+    padding: 0.4em;
+}
+
+.padding-05 {
+    padding: 0.5em;
+}
+
+.padding-10 {
+    padding: 1.0em;
+}
+
+.padding-15 {
+    padding: 1.5em;
+}
+
+.padding-20 {
+    padding: 2.0em;
+}
+
+.padding-25 {
+    padding: 2.5em;
+}
+
+.padding-30 {
+    padding: 3.0em;
+}
+
+.grid-view {
+    overflow-x: scroll;
+}
+
+.item-index thead tr td:nth-last-child(1) {
+    min-width: 150px;
+}
+
+.item-index tbody tr td {
+    vertical-align: middle !important;
+}
+
+/*** Form Control ***/
+.qms-internal-audit-form textarea.form-control,
+.qms-non-conformance-form textarea.form-control {
+    width: 100% !important;
+}
+
+.date-sm .krajee-datepicker {
+    min-width: 130px !important;
+}
+
+#schedule-date_start-datetime span.glyphicon.glyphicon-calendar,
+#schedule-date_end-datetime span.glyphicon.glyphicon-calendar {
+    margin-right: 0;
+}
+
+.employee-box {
+    display: none;
+}
+
+/*** Panel ***/
+.panel-heading {
+    border: 1px solid #eee !important;
+    padding: 10px 15px 5px;
+}
+
+/* pdf embed-related */
+
+.pdfobject-container {
+    height: 90vh;
+}
+
+.pdfobject {
+    border: 1px solid #666;
+}
+
+/* custom - end */
+
+.modal {
+    z-index: 1010 !important; /* orig 2050 */
+}
+
+.modal-backdrop {
+    z-index: 1000 !important; /* default = 2040*/
+}
+
+/*** Roster ***/
+.form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .form-inline .input-group .form-control {
+    width: auto;
+}
+
+input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+span.glyphicon.glyphicon-calendar {
+    margin-right: 323px;
+}
+
+/*
+.input-group-addon, .input-group-btn, .input-group .form-control
+{
+    border: none!important;
+}
+*/
+
+.b-l {
+    border-left: 1px solid #e7eaec;
+}
+
+/*** Timesheet ***/
+.timesheet .table-responsive {
+    height: 600px;
+    overflow: hidden;
+}
+
+.timesheet .table-responsive:hover {
+    overflow-x: auto;
+}
+
+.timesheet-record tbody tr td:nth-child(1) {
+    width: 198px !important;
+    max-width: 198px !important;
+}
+
+.timesheet-record tbody tr td:nth-child(2) {
+    width: 146px;
+}
+
+.timesheet .sub-title {
+    padding: 10px !important;
+    text-align: center;
+}
+
+.timesheet tbody td {
+    vertical-align: middle !important;
+}
+
+.timesheet table {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+
+.timesheet thead, tfoot {
+    background: #f9f9f9;
+    display: table;
+    width: 100%;
+    width: calc(100% - 0px);
+}
+
+.timesheet tbody {
+    height: 450px;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.timesheet tbody:hover {
+    overflow: auto;
+}
+
+.timesheet tbody tr,
+.timesheet tfoot tr {
+    display: table;
+    width: 100%;
+}
+
+.timesheet-record tbody tr {
+    display: table-row;
+}
+
+.timesheet-record,
+.timesheet-entry {
+    float: left;
+    width: 50%;
+}
+
+.timesheet h4 {
+    margin: 0;
+}
+
+.timesheet-record tr th {
+    padding: 16px 10px !important;
+    vertical-align: middle !important;
+}
+
+.timesheet-record tr th:nth-child(1) {
+    background-color: #eee !important;
+}
+
+.timesheet-record tbody td {
+    white-space: nowrap;
+}
+
+.timesheet-entry th {
+    min-width: 100px;
+    vertical-align: middle !important;
+}
+
+.timesheet-entry tbody tr,
+.timesheet-entry tfoot tr {
+    table-layout: fixed;
+}
+
+.timesheet-record tbody {
+    overflow-x: hidden !important;
+}
+
+.timesheet-record .table-responsive {
+    overflow: hidden !important;
+}
+
+.timesheet-entry tbody {
+    overflow-y: hidden;
+}
+
+.timesheet-table {
+    width: 100%;
+    overflow: auto;
+}
+
+.timesheet-table table {
+    overflow: auto;
+}
+
+.timesheet-records {
+    height: 600px;
+    overflow: auto;
+}
+
+
+/*****PURCHASE REPORTS******/
+.purchase-buttons{
+    margin-top:70px;
+}
+/*****DASHBOARD*******/
+.dashboard-statuses{
+    display: inline-block;
+    padding:20px 0 20px 0;
+    width:100%;
+}
+.dashboard-tables .col-lg-6 .ibox{
+    border-right:3px solid #e7eaec;
+    border-bottom:3px solid #e7eaec;
+    border-left:3px solid #e7eaec;
+}
+
+
+
+/* fixes - end */
+
+/*** Responsive ***/
+@media only screen and (max-width: 1290px) {
+    .date-col div:nth-child(1) {
+        margin-left: 0 !important;
+    }
+
+    .date-col .krajee-datepicker {
+        min-width: 130px !important
+    }
+}
+
+.red-text {
+    color: #d9534f;
+}
+
+/** mehul css for time sheet app view*/
+.foo-table-implementation .float-e-margins .btn {
+    margin-bottom: 0 !important;
+}
+
+.dataTables_wrapper .dt-buttons {
+    float: right;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.employee_details_table .employee_timesheet_details_div {
+    overflow-x: scroll;
+}
+
+.foo-table-implementation .ibox-title {
+    border-style: none !important;
+    overflow: scroll;
+
+}
+
+table.timesheet_main_table.no-footer {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table.timesheet_main_table thead th, table.dataTable thead td {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table.employee_timesheet_details_table.no-footer {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table.employee_timesheet_details_table thead th, table.dataTable thead td {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+.employee_details_table {
+    margin-top: 20px;
+}
+
+/*Css for checklist module*/
+
+.div-table {
+    display: table;
+    width: 100%;
+    border-spacing: 5px;
+    margin-bottom: 20px;
+}
+.div-table-row {
+    width: 100%;
+    clear: both;
+    background-color: #ffffff;
+}
+.div-table-col {
+    display: table-row;
+    width: 100%;
+    clear: both;
+    font-weight: bold;
+}
+.managers-checklist-daily-form .select2-container .select2-selection--single {
+    height: 33px!important;
+}
+
+.tbl_header{
+    display: table-cell;
+    border-bottom: 1px solid #DDDDDD;
+}
+.tbl_header p {
+    margin: 0 0 16px;
+}
+.managers-checklist-daily-form .select2-container--krajee .select2-selection--single .select2-selection__arrow {
+    border-left:none !important;
+}
+
+.spacer {
+    margin-bottom: 25px;
+}
+.checkbox-alignment {
+    text-align: center;
+    margin: 10px !important;
+}
+.weekly-indicators-append-data .managers-weekly-indicators-index {
+    overflow-x: scroll;
+}
+
+.managers-checklist-weekly-indicators-index .select-site-label{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.additional_charge_area_div .tbl_heading {
+    min-height: 40px;
+}
+
+/*Hiding table border in weekly indicators*/
+
+table.all_weekly_indicators_history_table.no-footer {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table.all_weekly_indicators_history_table thead th, table.dataTable thead td {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table.all_weekly_indicators_history_table.no-footer {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table.all_weekly_indicators_history_table thead th, table.dataTable thead td {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+.popover{
+    max-width: 100%; /* Max Width of the popover (depending on the container!) */
+}
+.monthly-po-table-div .grid-view tbody tr td:nth-last-child(1) {
+    text-align: left !important;
+}
+
+.additional-charge-form .select2-container .select2-selection--single {
+    height: 33px!important;
+}
+
+.additional-charge-form .select2-container--krajee .select2-selection--single .select2-selection__arrow {
+    border-left:none !important;
+}
+.additional-charge-form img {
+    display: block;
+    margin: 0 auto;
+}
+.managers-weekly-indicators-index img{
+    display: block;
+    margin: 0 auto;
+}
+.tool-box-talk-form img{
+    display: block;
+    margin: 0 auto;
+}
+.tool-box-talk-heading{
+    font-weight: bold;
+    text-align:center ;
+}
+.tool-box-attendance-text{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table.to_do_list_datatable.no-footer {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+table.to_do_list_datatable thead th, table.dataTable thead td {
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+/*export grid view css*/
+.panel-heading{
+    border: none !important;
+    float:left !important;
+    padding-left: 0!important;
+}
+.kv-panel-before{
+    float:left !important;
+    border: none !important;
+}
+.kv-panel-after {
+    padding: 0!important;
+    border: none!important;
+}
+.panel-footer {
+    width: fit-content!important;
+    padding: 0 !important;
+    background-color: #ffffff!important;
+    border: none !important;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    vertical-align: top!important;
+}
+/** mehul css ends here*/
+
+/***lyra css ***/
+.total a{
+    color:#676a6c!important;
+}
+.total a:hover{
+    cursor: pointer;
+    color:#23c6c8!important;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .modal-lg{
+        width: 95% !important;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .modal-lg{
+        width: 95% !important;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .modal-lg{
+        width: 95% !important;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .modal-lg{
+        width: 95% !important;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .modal-lg{
+        width: 95% !important;
+    }
+}
